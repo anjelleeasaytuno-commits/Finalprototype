@@ -1,0 +1,22 @@
+/* Global App Styles - WeArePlaygrounds */
+
+/* Ensure vibrant background is visible throughout the app */
+body {
+  background: #000000 !important;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  background: #000000;
+}
+
+/* Make app container transparent to show background */
+.app-container {
+  background: transparent !important;
+}
+
+/* Ensure all main screens allow background to show through */
+.screen-wrapper {
+  background: transparent;
+}

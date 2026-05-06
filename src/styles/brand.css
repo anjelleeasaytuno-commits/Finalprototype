@@ -1,0 +1,194 @@
+/* WeArePlaygrounds Brand Styles */
+
+/* Brand Colors - Exact from brand guide */
+:root {
+  --brand-yellow: #FFFF00;
+  --brand-purple: #8B008B;
+  --brand-pink: #ec4899;
+  --brand-cyan: #06b6d4;
+  --brand-bg: #000000;
+  --brand-card: #1a1a1a;
+  --brand-card-dark: #2a2a2a;
+
+  /* Grid pattern */
+  --brand-grid: rgba(139, 0, 139, 0.1);
+}
+
+/* Global background for all screens */
+body, .app-container {
+  background: var(--brand-bg) !important;
+}
+
+/* Typography Classes */
+.brand-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.brand-body {
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+.brand-body-semibold {
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.brand-body-medium {
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+/* Button Styles */
+.brand-button-primary {
+  background: var(--brand-yellow);
+  color: #0a0a0a;
+  font-family: var(--font-body);
+  font-weight: 700;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.brand-button-primary:hover {
+  box-shadow: 0 10px 25px rgba(255, 255, 0, 0.3);
+}
+
+.brand-button-secondary {
+  background: var(--brand-purple);
+  color: white;
+  font-family: var(--font-body);
+  font-weight: 600;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.brand-button-secondary:hover {
+  box-shadow: 0 10px 25px rgba(139, 0, 139, 0.3);
+}
+
+/* Card Styles */
+.brand-card {
+  background: var(--brand-card);
+  border-radius: 2rem;
+  border-width: 3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.brand-card-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, #8B008B, #ec4899);
+  opacity: 0.2;
+  transition: opacity 0.3s ease;
+}
+
+.brand-card:hover .brand-card-gradient {
+  opacity: 0.25;
+}
+
+/* Input Styles */
+.brand-input {
+  background: var(--brand-card);
+  border: 2px solid rgba(139, 0, 139, 0.5);
+  border-radius: 9999px;
+  color: white;
+  font-family: var(--font-body);
+  font-weight: 500;
+  padding: 0.875rem 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.brand-input:focus {
+  outline: none;
+  border-color: var(--brand-yellow);
+}
+
+.brand-input::placeholder {
+  color: #6b7280;
+}
+
+/* Tag/Chip Styles */
+.brand-tag {
+  background: var(--brand-yellow);
+  color: #0a0a0a;
+  font-family: var(--font-body);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+}
+
+.brand-tag-secondary {
+  background: var(--brand-card-dark);
+  color: white;
+  border: 2px solid rgba(107, 114, 128, 0.5);
+  font-family: var(--font-body);
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+
+/* Lowercase heading style */
+.brand-title-lowercase {
+  text-transform: lowercase;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Global overrides to ensure brand consistency */
+* {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6,
+.heading,
+[class*="heading"],
+[class*="title"] {
+  font-family: var(--font-display) !important;
+}
+
+/* Ensure all buttons use brand font */
+button {
+  font-family: var(--font-body) !important;
+}
+
+/* Ensure inputs use brand font */
+input, textarea, select {
+  font-family: var(--font-body) !important;
+}
+
+/* Consistent lowercase titles across app */
+h1[class*="lowercase"],
+.page-title {
+  text-transform: lowercase;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Page container utility */
+.brand-page {
+  background: var(--brand-bg);
+  position: relative;
+  z-index: 10;
+}
+
+/* Consistent screen wrapper */
+.screen-wrapper {
+  min-height: 100vh;
+  padding-bottom: 6rem;
+  position: relative;
+  z-index: 10;
+}
+
+/* Ensure popups and modals are above background */
+[role="dialog"],
+.modal,
+.popup {
+  z-index: 50 !important;
+}
