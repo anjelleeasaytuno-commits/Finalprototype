@@ -10,13 +10,7 @@ This project is a final prototype built from a Figma design. The goal of the pro
 The original design can be found here:  
 https://www.figma.com/design/oIvYzyXhPicxTV1vVlh6u5/Final-Prototype
 
----
 
-## Live Project  
-Live version (if available):  
-https://YOUR-LIVE-LINK-HERE.com  
-
-*(If not deployed yet, write: “Not deployed yet”)*
 
 ---
 
